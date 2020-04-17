@@ -119,6 +119,7 @@ public class GWFReader extends TraceFileReaderFoundation {
 		if (jobState != 1 && (procs < 1 || runtime < 0)) {
 			return null;
 		} else {
+			
 			return jobCreator.newInstance(
 					// id
 					elements[0],
